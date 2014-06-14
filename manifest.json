@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "NewsMonitor",
+    "version": "1.0",
+    "description": "GitHubのNewsを監視",
+    "background": {
+      "scripts": ["js/jquery.min.js", "js/background.js"]
+    },
+    "permissions": [
+      "https://github.com/"
+    ],
+    "browser_action" : {
+      "default_icon" : "icons/icon.png",
+      "default_title" : "Popup",
+      "default_popup" : "popup.html"
+    }
+}

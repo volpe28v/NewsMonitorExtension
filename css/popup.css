@@ -1,0 +1,39 @@
+body {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif;
+}
+
+#abst{
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+  color: #222;
+  padding-left: 10px;
+}
+
+#update{
+  font-size: 18px;
+  font-weight: bold;
+  color: #888;
+}
+
+#list {
+  padding: 5px 8px;
+}
+
+.time{
+  text-align: right;
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+}
+
+.title {
+  width: 100%;
+}
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
