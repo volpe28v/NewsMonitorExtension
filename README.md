@@ -1,4 +1,4 @@
-# RepoListExtension
+# NewsMonitorExtension
 
 Chrome Extension の練習用にGithubのNewsを定周期で自動表示してみる。
 
