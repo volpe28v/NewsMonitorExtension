@@ -1,9 +1,9 @@
 # RepoListExtension
 
-Chrome Extension の練習用にGithubのリポジトリ一覧を表示してみる。
+Chrome Extension の練習用にGithubのNewsを定周期で自動表示してみる。
 
 ## 仕組み
-* GitHubのユーザページにアクセスされると
-* ユーザページのリポジトリ一覧をスクレイピング
-* Popupにリポジトリ一覧をリスト表示
+* GitHubのNewsページを定周期でスクレイピング
+* PopupにNews内容をリスト表示
+* Popup表示中でもリアルタイム更新
 
