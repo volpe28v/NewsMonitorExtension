@@ -10,7 +10,7 @@ function doMonitor(){
 
     // リポジトリ情報を抜き出す
     var items = $.map(news,function(one_news, i) {
-      var title = $(one_news).find(".title").html();
+      var title = $(one_news).find(".title").html().replace(/href=/g, 'target="_blank" href=');;
       var time = $(one_news).find(".time").text();
       return {title: title, time: time};
     });
