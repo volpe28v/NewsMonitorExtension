@@ -28,6 +28,13 @@ body {
   color: #888;
 }
 
+.own-time{
+  text-align: right;
+  font-size: 12px;
+  font-weight: bold;
+  color: red;
+}
+
 .title {
   width: 100%;
 }

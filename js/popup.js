@@ -14,13 +14,20 @@ function dateToStr(date){
 function updateNews(){
   var parsedItems = chrome.extension.getBackgroundPage().parsedItems;
   var lastUpdatedAt = chrome.extension.getBackgroundPage().lastUpdatedAt;
+  var user = chrome.extension.getBackgroundPage().user;
 
+  $('#user').html(user);
   $('#update').html(dateToStr(lastUpdatedAt));
   $("#list").empty();
   parsedItems.forEach(function(item){
+    var timeClass = "time";
+    // ユーザ名が含まれていればデザインを変える
+    if (item.title.indexOf(user) != -1){
+      timeClass = "own-time";
+    }
     $("#list").append(
       $('<tr>').append(
-        $('<td>').addClass("time").attr("nowrap",'').append(
+        $('<td>').addClass(timeClass).attr("nowrap",'').append(
           $('<div/>').html(item.time)
         )
       ).append(

@@ -1,12 +1,18 @@
 var parsedItems = [];
 var lastUpdatedAt = new Date();
 var intervalTime = 60000;
+var user = "";
+
+String.prototype.trim = function() {
+  return this.replace(/^\s+|\s+$/g, "");
+}
 
 function doMonitor(){
   var news_url = "https://github.com/";
   $.get(news_url, function(data) {
     var $data = $(data);
     var news = $data.find(".news").find(".alert");
+    user = $data.find(".name").text().trim();
 
     // リポジトリ情報を抜き出す
     var items = $.map(news,function(one_news, i) {
