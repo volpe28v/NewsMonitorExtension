@@ -22,9 +22,10 @@ function updateNews(){
   parsedItems.forEach(function(item){
     var timeClass = "time";
     // ユーザ名が含まれていればデザインを変える
-    if (item.title.indexOf(user) != -1){
+    if (item.isOwn){
       timeClass = "own-time";
     }
+
     $("#list").append(
       $('<tr>').append(
         $('<td>').addClass(timeClass).attr("nowrap",'').append(
