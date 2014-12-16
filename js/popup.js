@@ -29,11 +29,13 @@ function updateNews(){
     $("#list").append(
       $('<tr>').append(
         $('<td>').addClass(timeClass).attr("nowrap",'').append(
-          $('<div/>').html(item.time)
+          $('<div/>').html(moment(item.date).format('YYYY-MM-DD'))
         )
       ).append(
         $('<td>').addClass("title").attr("nowrap",'').append(
-          $('<div/>').html(item.title)
+          $('<div/>').html(item.title).append(
+            $('<span/>').addClass("from-now").html(moment(item.date).fromNow())
+          )
         )
       )
     )

@@ -37,8 +37,8 @@ function doMonitor(){
         ownNewsCount++;
       }
 
-      var time = $(one_news).find(".time").text();
-      return {title: title, time: time, isOwn: isOwn};
+      var date = $(one_news).find("time").attr('datetime');
+      return {title: title, date: date, isOwn: isOwn};
     });
 
     parsedItems = items;
