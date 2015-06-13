@@ -22,7 +22,7 @@ function doMonitor(){
   $.get(news_url, function(data) {
     var $data = $(data);
     var news = $data.find(".news").find(".alert");
-    user = $data.find(".name").text().trim();
+    user = $data.find(".js-select-button").text().trim();
 
     // リポジトリ情報を抜き出す
     var ownNewsCount = 0;
