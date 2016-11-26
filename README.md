@@ -5,6 +5,9 @@
 
 ![スクリーンショット](https://dl.dropboxusercontent.com/u/1215986/NewsMonitor.png)
 
+## Chrome ウェブストア
+[GithubNewsMonitor](https://chrome.google.com/webstore/detail/githubnewsmonitor/hmbcolomeohndmmlfnhnfkpbcdjnjaai?hl=ja&authuser=1)
+
 ## 仕組み
 * GitHubのNewsページを定周期でスクレイピング
 * PopupにNews内容をリスト表示
